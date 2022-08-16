@@ -27,8 +27,8 @@ $(document).ready(function() {
         })
     };
 
-    // run checkHour() every hour 
-    setInterval(checkHour(), 1000 * 60 * 60);
+    // run checkHour() to keep events and time properly refreshed  
+    setInterval(checkHour(), 1000);
    
     // save events to localStorage 
     $('.saveBtn').on('click', function() {
